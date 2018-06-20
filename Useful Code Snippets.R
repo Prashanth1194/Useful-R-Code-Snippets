@@ -21,6 +21,14 @@ df_name <-  df_train %>% add_count(ip, wday, in_test_hh) %>% rename("nip_day_tes
 library(corrplot)
 corrplot(M, method="number")
 
+## ggplot to plotly directly
+library(ggplot2)
+library(plotly)
+
+your_ggplot <- ggplot(mtcars, aes(hp, mpg)) + geom_point()
+ggplotly(your_ggplot)
+
+
 ## Train-Test Split
 set.seed(101)
 sample <- sample.int(n = nrow(data), size = floor(.75*nrow(data)), replace = F)
