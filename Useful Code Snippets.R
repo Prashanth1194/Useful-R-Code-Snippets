@@ -165,6 +165,10 @@ table(predict(cost_mod, test_data[, vars]))
 table(predict(tree_mod, test_data[, vars]))
 table(predict(tree_boost, test_data[, vars]))
 
+## Reference links:
+#### https://cran.r-project.org/web/packages/C50/vignettes/C5.0.html
+#### https://en.wikipedia.org/wiki/C4.5_algorithm
+
 ## CHAID model 
 #### Reading link : https://www.r-bloggers.com/chaid-and-r-when-you-need-explanation-may-15-2018/
 ####              : https://arxiv.org/pdf/1901.00251.pdf
